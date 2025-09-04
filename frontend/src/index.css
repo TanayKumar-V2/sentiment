@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+
+body {
+  /* A very light gray for light mode */
+  @apply bg-slate-100 text-slate-800 transition-colors duration-300;
+}
+
+.dark body {
+  /* A deep, near-black for dark mode */
+  @apply bg-slate-900 text-slate-200;
+}
