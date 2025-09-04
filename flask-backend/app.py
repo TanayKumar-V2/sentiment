@@ -8,6 +8,7 @@ from nltk.stem.porter import PorterStemmer
 import numpy as np
 import requests 
 from bs4 import BeautifulSoup 
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -87,4 +88,5 @@ def analyze_url():
         return jsonify({'error': f"An error occurred: {e}"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
