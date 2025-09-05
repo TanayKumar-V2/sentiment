@@ -50,7 +50,7 @@ function App() {
     const payload = inputType === 'text' ? { text: inputValue } : { url: inputValue };
 
     try {
-      const response = await fetch(`https://sentiment-1-5lof.onrender.com${endpoint}`, {
+      const response = await fetch(`https://sentiment-4-8qyd.onrender.com${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
