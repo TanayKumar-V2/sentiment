@@ -5,5 +5,4 @@ nltk
 joblib
 Flask-Cors
 requests
-os
 bs4
